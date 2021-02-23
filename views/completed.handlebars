@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>EZ Audit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="student-info">
+        <div class="container">
+            <div class="student-info__heading">
+                <h1><a href="/journey">←</a></h1>
+                <h1 class="title">Degree Audit</h1>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Name: Kenneth Chen</p>
+                </div>
+                <div class="col-6">
+                    <p>PID: A15819942</p>
+                </div>
+                <div class="col-6">
+                    <p>College: Sixth</p>
+                </div>
+                <div class="col-6">
+                    <p>GPA: 4.0</p>
+                </div>
+                <div class="col-6">
+                    <p>Major: Math-CS</p>
+                </div>
+                <div class="col-6">
+                    <p>Minor: Cog. Sci.</p>
+                </div>
+            </div>
+            <a class="btn btn-secondary" href="/print" role="button">Print Degree Audit</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mb-3">
+            <h1 class="mb-3">Major Requirements</h1>
+            <ul class="list-group">
+                <li class="list-group-item">CSE 8A&emsp;Units: 4.0&emsp;Grade: A+</li>
+                <li class="list-group-item">CSE 8B&emsp;Units: 4.0&emsp;Grade: A+</li>
+                <li class="list-group-item">MATH 20C&emsp;Units: 4.0&emsp;Grade: A+</li>
+            </ul>
+
+        </section>
+        <section class="mb-3">
+            <h1 class="mb-3">Major Requirements</h1>
+            <ul class="list-group">
+                <li class="list-group-item">CSE 8A&emsp;Units: 4.0&emsp;Grade: A+</li>
+                <li class="list-group-item">CSE 8B&emsp;Units: 4.0&emsp;Grade: A+</li>
+                <li class="list-group-item">MATH 20C&emsp;Units: 4.0&emsp;Grade: A+</li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="offset"></div>
+
+    <nav class="bg-white">
+        <div class="btn-group btn-group-lg" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btncheck1"><a href="/" class="text-dark">Required</a></label>
+
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+            <label class="btn btn-secondary" for="btncheck2"><a href="/completed"
+                    class="text-white">Completed</a></label>
+
+            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btncheck3"><a href="/progress" class="text-dark">In
+                    Progress</a></label>
+        </div>
+    </nav>
+</body>
+
+</html>
