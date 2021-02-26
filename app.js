@@ -38,7 +38,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.login);
 app.get('/required', index.required);
 app.get('/completed', index.completed);
-app.get('/progress', index.progress);
+app.get('/wip', index.wip);
 app.get('/print', index.print);
 app.get('/eval', index.eval);
 app.get('/journey', index.journey);

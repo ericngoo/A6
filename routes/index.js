@@ -8,7 +8,7 @@ exports.login = function (req, res) {
 }
 
 exports.required = function (req, res) {
-  res.render('index');
+  res.render('required');
 };
 
 exports.completed = function (req, res) {
@@ -16,8 +16,8 @@ exports.completed = function (req, res) {
 };
 
 // In Progress page
-exports.progress = function (req, res) {
-  res.render('progress');
+exports.wip = function (req, res) {
+  res.render('wip');
 }
 
 exports.print = function (req, res) {
