@@ -14,7 +14,89 @@
 </head>
 
 <body>
-    <h1>Print Degree Audit Page</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="btn btn-primary" type="submit" onclick="printHandler()">Print</button>
+        </div>
+    </nav>
+
+    <div class="print-page-wrapper">
+        <main class="print-preview-container container">
+            <div>
+                <h1 class="title">Degree Audit</h1>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Name: Kenneth Chen</p>
+                </div>
+                <div class="col-6">
+                    <p>PID: A15819942</p>
+                </div>
+                <div class="col-6">
+                    <p>College: Sixth</p>
+                </div>
+                <div class="col-6">
+                    <p>GPA: 4.0</p>
+                </div>
+                <div class="col-6">
+                    <p>Major: Math-CS</p>
+                </div>
+                <div class="col-6">
+                    <p>Minor: Cog. Sci.</p>
+                </div>
+            </div>
+
+            <section class="mb-3">
+                <h2 class="mb-3 text-center">Required</h2>
+                <h3 class="mb-3">Major Requirements</h3>
+
+                <ul>
+                    <li>CSE 8A&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                    <li>CSE 8B&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                    <li>MATH 20C&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                </ul>
+
+                <h3 class="mb-3">Minor Requirements</h3>
+
+                <ul>
+                    <li>DSGN 10&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                    <li>COGS 120&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                    <li>CSE 99&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                </ul>
+            </section>
+            <section class="mb-3">
+                <h2 class="mb-3 text-center">Completed</h2>
+                <h3 class="mb-3">Major Requirements</h3>
+
+                <ul>
+                    <li>CSE 8A&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                    <li>CSE 8B&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                    <li>MATH 20C&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <div class="print-page-wrapper">
+        <main class="print-preview-container container">
+            <section class="my-3">
+                <ul>
+                    <li>DSGN 10&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                    <li>COGS 120&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                    <li>CSE 99&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        function printHandler() {
+            alert("Print job queued. Check your printer!");
+        }
+    </script>
 </body>
 
 </html>

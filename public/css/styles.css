@@ -50,3 +50,21 @@ nav a {
     justify-content: center;
     height: 100%;
 }
+
+/**
+    Print Degree Audit page
+**/
+
+.print-page-wrapper {
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.print-preview-container {
+    width: 45%;
+    min-height: 97%;
+    background-color: white;
+}
