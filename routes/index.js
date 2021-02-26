@@ -31,3 +31,7 @@ exports.eval = function (req, res) {
 exports.journey = function (req, res) {
   res.render('journey');
 };
+
+exports.checkpoint = function (req, res) {
+  res.render('checkpoint');
+};

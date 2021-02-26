@@ -42,6 +42,7 @@ app.get('/progress', index.progress);
 app.get('/print', index.print);
 app.get('/eval', index.eval);
 app.get('/journey', index.journey);
+app.get('/checkpoint', index.checkpoint);
 // Example route
 // app.get('/users', user.list);
 
