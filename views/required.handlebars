@@ -49,175 +49,50 @@
 		<section class="mb-3">
 			<h1 class="mb-3">Major Requirements</h1>
 			<div class="accordion">
+				{{#each majors}}
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-						<button class="accordion-button" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							CSE 110
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#{{id}}" aria-expanded="true" aria-controls={{id}}>
+							{{title}}
 						</button>
 					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-						data-bs-parent="#accordionExample">
+					<div id={{id}} class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<h3>Software Engineering</h3>
+							<h3>{{number}}</h3>
 							<p>
-								Introduction to software development and engineering methods, including specification,
-								design, implementation, testing,
-								and process. An emphasis on team development, agile methods, and use of tools such as
-								IDE’s, version control, and test
-								harnesses.
-							</p>
-							<p>
-								Prerequisites: CSE 100; restricted to students with junior or senior standing within the
-								CS25, CS26, CS27, CS28, and
-								EC26 majors. All other students will be allowed as space permits.
+								{{description}}
 							</p>
 							<a class="btn btn-secondary" href="/eval" role="button">Previous Evaluations</a>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-							MATH 109
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<h3>Software Engineering</h3>
-							<p>
-								This course uses a variety of topics in mathematics to introduce the students to
-								rigorous mathematical proof,
-								emphasizing quantifiers, induction, negation, proof by contradiction, naive set theory,
-								equivalence relations and
-								epsilon-delta proofs. Required of all departmental majors.
-							</p>
-							<p>
-								Prerequisites: MATH 18 or MATH 20F or MATH 31AH, and MATH 20C. Students who have not
-								completed listed prerequisites may
-								enroll with consent of instructor.
-							</p>
-							<button class="btn btn-secondary">Previous Evaluations</button>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-							MATH 154
-						</button>
-					</h2>
-					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<h3>Mathematical Reasoning</h3>
-							<p>
-								This course uses a variety of topics in mathematics to introduce the students to
-								rigorous mathematical proof,
-								emphasizing quantifiers, induction, negation, proof by contradiction, naive set theory,
-								equivalence relations and
-								epsilon-delta proofs. Required of all departmental majors.
-							</p>
-							<p>
-								Prerequisites: MATH 18 or MATH 20F or MATH 31AH, and MATH 20C. Students who have not
-								completed listed prerequisites may
-								enroll with consent of instructor.
-							</p>
-							<button class="btn btn-secondary">Previous Evaluations</button>
-						</div>
-					</div>
-				</div>
-
+				{{/each}}
 			</div>
 		</section>
+
 		<section class="mb-3">
 			<h1 class="mb-3">Minor Requirements</h1>
 			<div class="accordion">
+				{{#each minors}}
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
-							CSE 110
+							data-bs-target="#{{id}}" aria-expanded="true" aria-controls={{id}}>
+							{{title}}
 						</button>
 					</h2>
-					<div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingOne"
-						data-bs-parent="#accordionExample">
+					<div id={{id}} class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<h3>Software Engineering</h3>
+							<h3>{{number}}</h3>
 							<p>
-								Introduction to software development and engineering methods, including specification,
-								design, implementation, testing,
-								and process. An emphasis on team development, agile methods, and use of tools such as
-								IDE’s, version control, and test
-								harnesses.
+								{{description}}
 							</p>
-							<p>
-								Prerequisites: CSE 100; restricted to students with junior or senior standing within the
-								CS25, CS26, CS27, CS28, and
-								EC26 majors. All other students will be allowed as space permits.
-							</p>
-							<button class="btn btn-secondary">Previous Evaluations</button>
+							<a class="btn btn-secondary" href="/eval" role="button">Previous Evaluations</a>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapseTwo">
-							MATH 109
-						</button>
-					</h2>
-					<div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<h3>Software Engineering</h3>
-							<p>
-								This course uses a variety of topics in mathematics to introduce the students to
-								rigorous mathematical proof,
-								emphasizing quantifiers, induction, negation, proof by contradiction, naive set theory,
-								equivalence relations and
-								epsilon-delta proofs. Required of all departmental majors.
-							</p>
-							<p>
-								Prerequisites: MATH 18 or MATH 20F or MATH 31AH, and MATH 20C. Students who have not
-								completed listed prerequisites may
-								enroll with consent of instructor.
-							</p>
-							<button class="btn btn-secondary">Previous Evaluations</button>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseThree">
-							MATH 154
-						</button>
-					</h2>
-					<div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<h3>Mathematical Reasoning</h3>
-							<p>
-								This course uses a variety of topics in mathematics to introduce the students to
-								rigorous mathematical proof,
-								emphasizing quantifiers, induction, negation, proof by contradiction, naive set theory,
-								equivalence relations and
-								epsilon-delta proofs. Required of all departmental majors.
-							</p>
-							<p>
-								Prerequisites: MATH 18 or MATH 20F or MATH 31AH, and MATH 20C. Students who have not
-								completed listed prerequisites may
-								enroll with consent of instructor.
-							</p>
-							<button class="btn btn-secondary">Previous Evaluations</button>
-						</div>
-					</div>
-				</div>
-
+				{{/each}}
 			</div>
 		</section>
 

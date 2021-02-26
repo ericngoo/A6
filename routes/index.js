@@ -1,14 +1,17 @@
+var requiredData = require('../data/required.json');
+var wipData = require('../data/wip.json');
+var completedData = require('../data/completed.json');
 
-/*
- * GET home page.
- */
 
 exports.login = function (req, res) {
   res.render('login');
 }
 
 exports.required = function (req, res) {
-  res.render('required');
+  res.render('required', {
+    majors: requiredData.majors,
+    minors: requiredData.minors,
+  });
 };
 
 exports.completed = function (req, res) {
