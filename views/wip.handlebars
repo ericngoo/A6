@@ -49,18 +49,18 @@
         <section class="mb-3">
             <h1 class="mb-3">Major Requirements</h1>
             <ul class="list-group">
-                <li class="list-group-item">CSE 8A&emsp;Units: 4.0&emsp;Grade: N/A</li>
-                <li class="list-group-item">CSE 8B&emsp;Units: 4.0&emsp;Grade: N/A</li>
-                <li class="list-group-item">MATH 20C&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                {{#each majors}}
+                <li class="list-group-item">{{number}}&emsp;Units: {{units}}&emsp;Grade: N/A</li>
+                {{/each}}
             </ul>
 
         </section>
         <section class="mb-3">
             <h1 class="mb-3">Major Requirements</h1>
             <ul class="list-group">
-                <li class="list-group-item">CSE 8A&emsp;Units: 4.0&emsp;Grade: N/A</li>
-                <li class="list-group-item">CSE 8B&emsp;Units: 4.0&emsp;Grade: N/A</li>
-                <li class="list-group-item">MATH 20C&emsp;Units: 4.0&emsp;Grade: N/A</li>
+                {{#each minors}}
+                <li class="list-group-item">{{number}}&emsp;Units: {{units}}&emsp;Grade: N/A</li>
+                {{/each}}
             </ul>
         </section>
     </main>

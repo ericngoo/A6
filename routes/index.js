@@ -15,12 +15,18 @@ exports.required = function (req, res) {
 };
 
 exports.completed = function (req, res) {
-  res.render('completed');
+  res.render('completed', {
+    majors: completedData.majors,
+    minors: completedData.minors,
+  });
 };
 
 // In Progress page
 exports.wip = function (req, res) {
-  res.render('wip');
+  res.render('wip', {
+    majors: wipData.majors,
+    minors: wipData.minors,
+  });
 }
 
 exports.print = function (req, res) {
